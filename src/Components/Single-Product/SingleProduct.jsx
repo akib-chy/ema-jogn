@@ -3,7 +3,6 @@ import "./SingleProducts.css";
 
 const SingleProduct = (props) => {
   const { name, img, price, ratings, seller } = props.products;
-  console.log(props.handleAddToCart);
   return (
     <div className="product">
       <img src={img} alt="" />
@@ -16,7 +15,7 @@ const SingleProduct = (props) => {
         </div>
       </div>
       <button onClick={props.handleAddToCart} type="submit">
-        Add To Card
+        Add To Cart <i className="fa-solid fa-cart-plus"></i>
       </button>
     </div>
   );
