@@ -1,0 +1,39 @@
+.nav {
+  background-color: #1c2b35;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 140px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 30px;
+  position: relative;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 17px;
+}
+.nav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: orange;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
